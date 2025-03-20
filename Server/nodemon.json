@@ -1,0 +1,4 @@
+{
+    "ignore": ["Database/projectDb.js", "Database/platformEncryptionDb.js"]
+}
+  

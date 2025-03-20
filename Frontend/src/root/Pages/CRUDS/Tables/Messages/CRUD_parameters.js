@@ -1,0 +1,263 @@
+export const parameters = {
+              "steps": [
+                
+                    {
+                        "title": "messages Info",
+                        "parameters": {
+                            "fields": [
+                                {
+                                    "name": "messages",
+                                    "type": "section",
+                                    "hideInCreateForm": false,
+                                    "visible": false,
+                                    "required": false,
+                                    "disabled": false,
+                                    "validations": "",
+                                    "dependancyCheck": false,
+                                    "isPrefilled": false,
+                                    "source": "req.body",
+                                    "title": "Messages",
+                                    "childFields": [
+                                            {
+                                              "name": "id",
+                                              "label": "id",
+                                              "title": "",
+                                              "type": "textField",
+                                              "required": false,
+                                              "hideInCreateForm": true,
+                                              "hideInViewForm" : true,
+                                              "visible": false,
+                                              "disabled": false,
+                                              "dependancyCheck": false,
+                                              "isPrefilled": false,
+                                              "source": "req.query",
+                                              "min": "",
+                                              "max": "",
+                                              "selectServer": false,
+                                              "dynamicKey": "id",
+                                              "alias" : "messages.id"
+
+                                            },
+                                        
+                                            {
+                                                "name": "sentByUserRoleDepartmentId",
+                                                "label": "Sent By User Role Department Id",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_sentByUserRoleDepartmentId",
+                                                "alias" : "messages.sent_by_user_role_department_id"
+                                            },
+                                            {
+                                                "name": "recepientUserRoleDepartmentId",
+                                                "label": "Recepient User Role Department Id",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_recepientUserRoleDepartmentId",
+                                                "alias" : "messages.recepient_user_role_department_id"
+                                            },
+                                            {
+                                                "name": "recepientChattingGroupId",
+                                                "label": "Recepient Chatting Group Id",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_recepientChattingGroupId",
+                                                "alias" : "messages.recepient_chatting_group_id"
+                                            },
+                                            {
+                                                "name": "messageTitle",
+                                                "label": "Message Title",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_messageTitle",
+                                                "alias" : "messages.message_title"
+                                            },
+                                            {
+                                                "name": "messageBody",
+                                                "label": "Message Body",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_messageBody",
+                                                "alias" : "messages.message_body"
+                                            },
+                                            {
+                                                "name": "attachementId",
+                                                "label": "Attachement Id",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_attachementId",
+                                                "alias" : "messages.attachement_id"
+                                            },
+                                            {
+                                                "name": "createdBy",
+                                                "label": "Created By",
+                                                "title": "",
+                                                "type": "textField",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_createdBy",
+                                                "alias" : "messages.created_by"
+                                            },
+                                            {
+                                              "type": "listOfFields",
+                                              "name": "options",
+                                              "label": "Add Messages",
+                                              "hideInCreateForm": true,
+
+                                              "hideInViewForm": true,
+                                              "title": "Select Messages",
+                                              "dependancyCheck": false,
+                                              "childFields": [
+                                            
+                                            ]
+                                          }
+                                        ,
+                                        
+                                            {
+                                                "name": "updatedBy",
+                                                "label": "Updated By",
+                                                "title": "",
+                                                "type": "dateTime",
+                                                "required": false,
+                                                "hideInCreateForm": true,
+                                                "hideInViewForm" : true,
+                                                "visible": false,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_updatedBy",
+                                                "alias" : "messages.updated_by"
+                                            },
+                                            {
+                                                "name": "updatedAt",
+                                                "label": "Updated At",
+                                                "title": "",
+                                                "type": "dateTime",
+                                                "required": false,
+                                                "hideInCreateForm": true,
+                                                "hideInViewForm" : true,
+                                                "visible": false,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_updatedAt",
+                                                "alias" : "messages.updated_at"
+                                            },
+                                          
+                                            {
+                                                "name": "status",
+                                                "label": "Status",
+                                                "title": "",
+                                                "type": "select",
+                                                "required": false,
+                                                "hideInCreateForm": false,
+                                                "visible": true,
+                                                "disabled": false,
+                                                "dependancyCheck": false,
+                                                "isPrefilled": false,
+                                                "source": "req.body",
+                                                "min": "",
+                                                "max": "",
+                                                "validations": [],
+                                                "selectServer": false,
+                                                "dynamicKey": "messages_status",
+                                                options:[
+                                                    {value:'inactive',label:'inactive'},
+                                                    {value:'active',label:'active'}
+                                                ],
+                                                "alias" : "messages.status"
+                                            }
+
+                                    ]
+                                }
+                            ]
+                        },
+                        "permission": "messages_view"
+                    }                  
+              ],
+              "colMapper": { 'messages_messageId' : 'message_id',  'messages_sentByUserRoleDepartmentId' : 'sent_by_user_role_department_id',  'messages_recepientUserRoleDepartmentId' : 'recepient_user_role_department_id',  'messages_recepientChattingGroupId' : 'recepient_chatting_group_id',  'messages_status' : 'status',  'messages_messageTitle' : 'message_title',  'messages_messageBody' : 'message_body',  'messages_attachementId' : 'attachement_id',  'messages_updatedBy' : 'updated_by',  'messages_updatedAt' : 'updated_at',  'messages_createdBy' : 'created_by'}
+          };
